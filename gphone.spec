@@ -1,4 +1,4 @@
-# $Id: gphone.spec,v 1.3 1999-07-12 23:05:57 kloczek Exp $
+# $Id: gphone.spec,v 1.4 2000-03-28 16:54:22 baggins Exp $
 
 # This spec file is incomplete, has never been tested and WILL NOT WORK!
 

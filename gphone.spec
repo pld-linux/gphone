@@ -15,12 +15,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix		/usr/X11R6
 
 %description
-gphone is an "internet phone" -- it lets you talk (out loud, not by typing)
-over a network connection.
+gphone is an "internet phone" -- it lets you talk (out loud, not by
+typing) over a network connection.
 
 %description -l pl
-gphone jest "telefonem internetowym": pozwala rozmawiaæ (dos³ownie, nie
-stukaj±c w klawiaturê) u¿ytkownikom po³±czonym sieci±.
+gphone jest "telefonem internetowym": pozwala rozmawiaæ (dos³ownie,
+nie stukaj±c w klawiaturê) u¿ytkownikom po³±czonym sieci±.
 
 %prep
 %setup -q

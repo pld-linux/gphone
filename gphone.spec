@@ -32,7 +32,7 @@ nie stukaj±c w klawiaturê) u¿ytkownikom po³±czonym sieci±.
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure

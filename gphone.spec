@@ -17,7 +17,6 @@ BuildRequires:	popt-devel
 BuildRequires:	slang-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 gphone is an "internet phone" -- it lets you talk (out loud, not by

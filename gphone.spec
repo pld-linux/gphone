@@ -29,7 +29,7 @@ nie stukaj±c w klawiaturê) u¿ytkownikom po³±czonym sieci±.
 %setup -q
 
 %build
-%configure
+%configure2_13
 %{__make}
 
 %install

@@ -6,6 +6,7 @@ Release:	4
 License:	GPL v2
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/gphone/%{name}-%{version}.tar.gz
+# Source0-md5:	4d6623a6866653a612d3358028555643
 Source1:	%{name}.desktop
 Patch0:		%{name}-am_fixes.patch
 URL:		http://gphone.sourceforge.net/

@@ -2,7 +2,7 @@ Summary:	internet phone with a gtk interface
 Summary(pl):	Internetowy telefon z interfejsem GTK
 Name:		gphone
 Version:	0.5.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/gphone/%{name}-%{version}.tar.gz

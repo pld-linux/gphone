@@ -10,7 +10,7 @@ URL:		http://gphone.sourceforge.net/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libgsm-devel
 BuildRequires:	popt-devel
-BuildRequires:  slang-devel
+BuildRequires:	slang-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6

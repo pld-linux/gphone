@@ -1,4 +1,4 @@
-# $Id: gphone.spec,v 1.4 2000-03-28 16:54:22 baggins Exp $
+# $Id: gphone.spec,v 1.5 2000-04-04 07:03:17 arturs Exp $
 
 # This spec file is incomplete, has never been tested and WILL NOT WORK!
 
@@ -15,6 +15,10 @@ Packager: Roland Dreier <dreier@linuxfreak.com>
 %description
 gphone is an "internet phone" -- it lets you talk (out loud, not by
 typing) over a network connection.
+
+%description -l pl
+gphone jest "telefonem internetowym": pozwala rozmawiaæ (dos³ownie, nie
+stukaj±c w klawiaturê) u¿ytkownikom po³±czonym sieci±.
 
 %prep
 %setup

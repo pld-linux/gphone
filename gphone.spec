@@ -5,7 +5,7 @@ Version:	0.5.2
 Release:	4
 License:	GPL v2
 Group:		X11/Applications/Sound
-Source0:	ftp://download.sourceforge.net/pub/sourceforge/gphone/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/gphone/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-am_fixes.patch
 URL:		http://gphone.sourceforge.net/
@@ -16,7 +16,6 @@ BuildRequires:	libgsm-devel
 BuildRequires:	popt-devel
 BuildRequires:	slang-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 gphone is an "internet phone" -- it lets you talk (out loud, not by

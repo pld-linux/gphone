@@ -6,7 +6,10 @@ Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/gphone/%{name}-%{version}.tar.gz
+Patch0:		%{name}-am_fixes.patch
 URL:		http://gphone.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libgsm-devel
 BuildRequires:	popt-devel
@@ -25,9 +28,14 @@ nie stukaj±c w klawiaturê) u¿ytkownikom po³±czonym sieci±.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
-%configure2_13
+rm -f missing
+aclocal
+autoconf
+automake -a -c -f
+%configure
 %{__make}
 
 %install

@@ -4,7 +4,7 @@ Name:		gphone
 Version:	0.5.2
 Release:	4
 License:	GPL v2
-Group:		X11/Applications/Multimedia
+Group:		X11/Applications/Sound
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/gphone/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-am_fixes.patch

@@ -1,0 +1,18 @@
+--- gphone-0.5.2/lib/Makefile.am~	Thu Apr 25 17:04:26 2002
++++ gphone-0.5.2/lib/Makefile.am	Thu Apr 25 17:04:26 2002
+@@ -5,7 +5,4 @@
+ libgphone_a_SOURCES = util.c sound.c term.c net.c thread-queue.c rtp.c \
+                       random.c md5c.c rtp-packet.c rtcp-packet.c
+ 
+-CFLAGS = -g -Wall
+-
+-
+ 
+--- gphone-0.5.2/gphone/Makefile.am~	Thu Apr 25 17:05:49 2002
++++ gphone-0.5.2/gphone/Makefile.am	Thu Apr 25 17:05:49 2002
+@@ -5,5 +5,3 @@
+ gphone_DEPENDENCIES = $(top_builddir)/lib/libgphone.a
+ 
+ INCLUDES = -I$(top_srcdir)/include $(GLIB_CFLAGS) $(GTK_CFLAGS)
+-
+-CFLAGS = -g -Wall

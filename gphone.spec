@@ -1,4 +1,4 @@
-Summary:	internet phone with a gtk interface
+Summary:	Internet phone with a gtk interface
 Summary(pl):	Internetowy telefon z interfejsem GTK
 Name:		gphone
 Version:	0.5.2
@@ -19,7 +19,7 @@ BuildRequires:	slang-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-gphone is an "internet phone" -- it lets you talk (out loud, not by
+gphone is an "internet phone" - it lets you talk (out loud, not by
 typing) over a network connection.
 
 %description -l pl

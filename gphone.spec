@@ -28,7 +28,7 @@ nie stukaj±c w klawiaturê) u¿ytkownikom po³±czonym sieci±.
 %build
 LDFLAGS="-s"; export LDFLAGS
 %configure
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT

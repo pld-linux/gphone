@@ -5,11 +5,14 @@ Version:	0.5.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
+Group(de):	X11/Applikationen/Multimedia
 Group(pl):	X11/Aplikacje/Multimedia
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/gphone/%{name}-%{version}.tar.gz
 URL:		http://gphone.sourceforge.net/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libgsm-devel
+BuildRequires:	popt-devel
+BuildRequires:  slang-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -26,7 +29,6 @@ nie stukaj±c w klawiaturê) u¿ytkownikom po³±czonym sieci±.
 %setup -q
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 
@@ -40,3 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/*

@@ -1,33 +1,41 @@
-# $Id: gphone.spec,v 1.5 2000-04-04 07:03:17 arturs Exp $
+Summary:	internet phone with a gtk interface
+Name:		gphone
+Version:	0.5.1
+Release:	1
+License:	GPL
+Group:		X11/Applications/Multimedia
+Group(pl):	X11/Aplikacje/Multimedia
+Source0:	ftp://download.sourceforge.net/pub/sourceforge/gphone/%{name}-%{version}.tar.gz
+URL:		http://gphone.sourceforge.net/
+BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	libgsm-devel
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-# This spec file is incomplete, has never been tested and WILL NOT WORK!
-
-Summary: internet phone with a gtk interface
-Name: gphone
-Version: .1
-Release: 1
-Copyright: GPL
-Group: Applications
-Source: http://www.penguinpowered.com/~gphone/gphone-0.1.tar.gz
-URL: http://www.penguinpowered.com/~gphone/gphone.html
-Packager: Roland Dreier <dreier@linuxfreak.com>
+%define		_prefix		/usr/X11R6
 
 %description
-gphone is an "internet phone" -- it lets you talk (out loud, not by
-typing) over a network connection.
+gphone is an "internet phone" -- it lets you talk (out loud, not by typing)
+over a network connection.
 
 %description -l pl
 gphone jest "telefonem internetowym": pozwala rozmawiaæ (dos³ownie, nie
 stukaj±c w klawiaturê) u¿ytkownikom po³±czonym sieci±.
 
 %prep
-%setup
+%setup -q
 
 %build
-./configure --prefix=/usr
+LDFLAGS="-s"; export LDFLAGS
+%configure
 make
 
 %install
-make install
+rm -rf $RPM_BUILD_ROOT
+make install \
+	DESTDIR=$RPM_BUILD_ROOT
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
+%defattr(644,root,root,755)

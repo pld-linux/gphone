@@ -40,12 +40,12 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Communications
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/Communications
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Network/Communications/*.desktop
+%{_desktopdir}/*.desktop

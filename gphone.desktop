@@ -8,5 +8,5 @@ Icon=
 Terminal=false
 MultipleArgs=false
 Type=Application
-Categories=Network;Telephony;
+Categories=GTK;Network;Telephony;
 # vi: encoding=utf-8

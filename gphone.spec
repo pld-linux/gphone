@@ -1,5 +1,5 @@
 Summary:	Internet phone with a GTK+ interface
-Summary(pl):	Internetowy telefon z interfejsem GTK+
+Summary(pl.UTF-8):   Internetowy telefon z interfejsem GTK+
 Name:		gphone
 Version:	0.5.2
 Release:	4
@@ -22,9 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 gphone is an "internet phone" - it lets you talk (out loud, not by
 typing) over a network connection.
 
-%description -l pl
-gphone jest "telefonem internetowym": pozwala rozmawiaæ (dos³ownie,
-nie stukaj±c w klawiaturê) u¿ytkownikom po³±czonym sieci±.
+%description -l pl.UTF-8
+gphone jest "telefonem internetowym": pozwala rozmawiaÄ‡ (dosÅ‚ownie,
+nie stukajÄ…c w klawiaturÄ™) uÅ¼ytkownikom poÅ‚Ä…czonym sieciÄ….
 
 %prep
 %setup -q

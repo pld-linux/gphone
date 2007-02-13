@@ -1,5 +1,5 @@
 Summary:	Internet phone with a GTK+ interface
-Summary(pl.UTF-8):   Internetowy telefon z interfejsem GTK+
+Summary(pl.UTF-8):	Internetowy telefon z interfejsem GTK+
 Name:		gphone
 Version:	0.5.2
 Release:	4
